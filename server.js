@@ -14,7 +14,6 @@ function start(route, handle) {
     console.log("Request for " + pathname + " received.");
     route(handle, pathname, response);
   }
-app.listen(port);
 
   http.createServer(onRequest).listen(port);
   console.log("Server has started.");
